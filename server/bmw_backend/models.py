@@ -19,6 +19,7 @@ class CarSale(BaseModel, SerializerMixin):
     price = db.Column(db.Numeric())
     sold_at = db.Column(db.Date)
 
+
 class User(BaseModel, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(140))
